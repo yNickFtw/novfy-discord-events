@@ -20,11 +20,11 @@ export class AppController {
     }
     
     let finalMessage = `
-    EVENTO: ${event}
-    
-    Mensagem: ${message}
+EVENTO: ${event}
 
-    Metadata: ${metadata}
+Mensagem: ${message}
+
+Metadata: ${metadata}
 `
 
     await this.discordService.sendMessage(process.env.DISCORD_CHANNEL_ID, finalMessage);
